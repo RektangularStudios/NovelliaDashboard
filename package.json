@@ -23,7 +23,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "my_new_app"
+            "name": "novellia-dashboard"
           }
         },
         {
@@ -50,8 +50,8 @@
               "config": "./webpack.renderer.config.js",
               "entryPoints": [
                 {
-                  "html": "./src/index.html",
-                  "js": "./src/renderer.ts",
+                  "html": "./src/renderer/index.html",
+                  "js": "./src/renderer/renderer.ts",
                   "name": "main_window"
                 }
               ]
@@ -62,10 +62,12 @@
     }
   },
   "dependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
     "core-js": "^3.6.5",
     "electron-squirrel-startup": "^1.0.0",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
+    "vue-devtools": "^5.1.4",
     "vue-loader": "^15.9.6",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
@@ -88,7 +90,6 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "electron": "^12.0.0",
@@ -106,7 +107,6 @@
     "sass-loader": "^8.0.2",
     "style-loader": "^1.3.0",
     "ts-loader": "^8.0.17",
-    "typescript": "~3.9.3",
-    "vue-devtools": "^5.1.4"
+    "typescript": "~3.9.3"
   }
 }

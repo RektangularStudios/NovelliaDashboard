@@ -3,7 +3,7 @@ import { app, BrowserWindow, nativeImage } from 'electron'
 export const createDashboardWindow = () => {
   // TODO: branch support here for all OS
   const icon = nativeImage.createFromPath(
-    app.getAppPath() + "/build/assets/icons/1024x1024.png"
+    app.getAppPath() + "file://renderer/assets/icons/1024x1024.png"
   );
 
   const window = new BrowserWindow({

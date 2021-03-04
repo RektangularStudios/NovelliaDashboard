@@ -1,7 +1,3 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
 import { app, BrowserWindow } from 'electron';
 import installExtension, { VUEJS_DEVTOOLS }  from 'electron-devtools-installer';
 import { createDashboardWindow } from './windows/dashboard';
@@ -39,15 +35,8 @@ const onAppReady = async () => {
 
   dashboardWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
-  //dashboardWindow.loadFile('file://index.html')
-
   // open Dev Tools window
-  //dashboardWindow.webContents.openDevTools();
+  dashboardWindow.webContents.openDevTools();
 }
 
 app.on('ready', onAppReady);
-
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
