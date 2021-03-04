@@ -12,13 +12,16 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "allowJs": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
     "types": [
       "webpack-env"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "*": ["node_modules/*"]
     },
     "lib": [
       "esnext",
@@ -26,17 +29,8 @@
       "dom.iterable",
       "scripthost"
     ],
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
+    "src/**/*"
   ]
 }
