@@ -1,4 +1,8 @@
 module.exports = [
+  {
+    test: /\.vue$/,
+    loader: 'vue-loader'
+  },
   // Add support for native node modules
   {
     test: /\.node$/,
@@ -34,9 +38,5 @@ module.exports = [
       // Compiles Sass to CSS
       'sass-loader',
     ],
-  },
-  {
-    test: /\.vue$/,
-    loader: 'vue-loader'
-  },
+  }
 ];

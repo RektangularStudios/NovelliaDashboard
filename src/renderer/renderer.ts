@@ -10,7 +10,13 @@ import store from "./store";
 
 console.log('👋 This message is being logged by "renderer.ts", included via webpack');
 
-createApp(App)
+const vm = createApp(App).mount("#app");
+//app.use(store);
+//app.use(router);
+/*
   .use(store)
   .use(router)
   .mount("#app");
+*/
+//app.component("app", {});
+//const vm = app.mount("#app");
