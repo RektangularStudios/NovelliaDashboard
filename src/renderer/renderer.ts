@@ -4,7 +4,7 @@
 import { createApp } from "vue";
 import router from "./router";
 import store from "./store";
-import './index.scss';
+import "./index.scss";
 import App from "./App.vue";
 
 const vm = createApp(App)

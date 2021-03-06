@@ -5,7 +5,7 @@
     "email": "contact@rektangularstudios.com"
   },
   "description": "The single point of access for the Novellia Platform.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "TODO",
   "main": ".webpack/main",
   "scripts": {
@@ -62,8 +62,12 @@
     }
   },
   "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/compiler-sfc": "^3.0.7",
     "@vue/component-compiler-utils": "^3.2.0",
+    "@vue/runtime-dom": "^3.0.7",
+    "babel-loader": "^8.2.2",
     "core-js": "^3.6.5",
     "css-loader": "^5.1.1",
     "electron-squirrel-startup": "^1.0.0",

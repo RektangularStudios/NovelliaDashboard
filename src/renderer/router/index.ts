@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import App from "../App.vue";
 import Overview from "../views/Overview.vue";
 import Collection from "../views/Collection.vue";
 import Market from "../views/Market.vue";
