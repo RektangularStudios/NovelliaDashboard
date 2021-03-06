@@ -28,19 +28,21 @@ Install dependencies:
 
 # Running
 
-## Build step
-`npm run build`
-
-Or for hot-reloading
-`npm run build:watch`
-
-## Execution step
 `npm run start`
 
+To hot reload type `rs` in the terminal and hit `enter`
+
 The Novellia dashboard should now appear in a window.
+
 Since Electron is a wrapper on Chromium, the full suite of web development tools is available, just hit `ctrl + shift + I`.
 
 # Extras
 
-Icon builder
-`npm install --save-dev electron-icon-builder`
+## Icon builder
+
+Generate icons from a file named `icon.jpg`
+`npm run icon`
+
+# Versions
+
+We are using Webpack 4.46 as this is what is supported by electron-forge.
